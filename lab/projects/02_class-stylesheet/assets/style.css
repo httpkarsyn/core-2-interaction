@@ -1,3 +1,5 @@
 html {
-    color: rgb(255, 0, 195);
+    color: whitesmoke;
+    background-image: url("flower2.jpg");
+    font-family: monospace;
 }
