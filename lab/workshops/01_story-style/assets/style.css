@@ -1,10 +1,76 @@
+/* general styles */ 
 html{
-    background-color: rgb(246, 132, 18);
-    color: whitesmoke;
+    background-color: burlywood;
+    color: black;
 }
+
+h1, h2, p {
+    margin: 0%;
+
+}
+body {
+max-width: 600px;
+margin: auto;
+}
+/* main header */ 
 .mainheader{
     text-align: center;
+    font-style: italic;
+    margin-top: 50px;
 }
-.part1 {
-    color: aquamarine;
+
+/* parts */ 
+.part{
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 50px 0px 50px 0px;
+}
+#partone {
+    background-color: orange;
+    display: block ma;
+}
+#parttwo{
+    background-color: aliceblue;
+}
+#partthree {
+    background-color: aqua;
+}
+#partfour {
+    background-color: azure;
+}
+#partfive {
+    background-color: greenyellow;
+
+}
+
+/* media elements */ 
+img, video, audio, object {
+    width: 100%;
+    margin-top: 10px;
+}
+object{
+    aspect-ratio: 4/3;
+}
+
+/* nav*/ 
+.nav{
+    position:fixed;
+    top:10px ;
+    right: 10px;
+    
+}
+.nav a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-item {
+    display: inline-block;
+    background: black;
+    padding: 5px;
 }
