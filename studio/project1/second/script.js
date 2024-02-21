@@ -9,7 +9,7 @@ window.addEventListener("load", startAutoScrolling);
 function startAutoScrolling() {
   auto_scroll_kicked = true;
   // Increase the scroll counter
-  scroll_counter += 1.8;
+  scroll_counter += 1.2;
   // Set the scroll position
   document.documentElement.scrollTop = scroll_counter;
   // Request the next animation frame
@@ -22,9 +22,9 @@ function startAutoScrolling() {
 }
 
 // Stop auto-scrolling when the user scrolls manually
-window.addEventListener("wheel", () => {
+/*window.addEventListener("wheel", () => {
   if (auto_scroll_kicked) {
     window.cancelAnimationFrame(scroller);
     auto_scroll_kicked = false;
   }
-});
+});*/
