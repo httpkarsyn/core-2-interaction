@@ -1,24 +1,19 @@
-let body = document.body,
-    scroll_counter = 0,
-    auto_scroll_kicked = false,
-    scroller; // Declare scroller globally
+let body = document.body;
+let scroll_counter = 0;
+let auto_scroll_started = false;
+let scroller;
 
-// Start auto-scrolling when the page loads
-window.addEventListener("load", startAutoScrolling);
+document.addEventListener("DOMContentLoaded", startAutoScrolling);
 
 function startAutoScrolling() {
-    auto_scroll_kicked = true;
-    // Increase the scroll counter
-    scroll_counter += 1.3;
-    // Set the scroll position
-    document.documentElement.scrollTop = scroll_counter;
-    // Request the next animation frame
+    auto_scroll_started = true;
+    scroll_counter += 1.2; // Adjust increment as needed
+    window.scrollTo(0, scroll_counter);
+
     scroller = window.requestAnimationFrame(startAutoScrolling);
 
-    // Cancel the animation frame when the scrolling reaches the end
     if (scroll_counter >= body.offsetHeight) {
         window.cancelAnimationFrame(scroller);
     }
 }
-
 
