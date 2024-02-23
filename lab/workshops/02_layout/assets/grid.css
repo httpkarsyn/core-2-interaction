@@ -1,0 +1,44 @@
+.Group {
+    background: aqua;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+
+    /* grid */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.Classmate {
+    background-color: dodgerblue;
+    border: 1px solid aliceblue;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.GroupThree {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.Main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#Karsyn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* type */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
