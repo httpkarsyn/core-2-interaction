@@ -2,20 +2,45 @@
         background-color: rgba(250, 168, 220, 0.796);
         color: whitesmoke;
     }
+h1 {
+    font-size: 38px;
+}
 
-    h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 24px;
-    }
-    h3{
-        font-size: 24px;
-    }
+h2 {
+   font-size: 34px; 
+}
 
-    h4{
-        font-size: 32px;
-    }
-    h5{
-        font-size: 24px;
-    }
+h3 {
+    font-size: 34px;
+
+}
+
+p1, p2, p4, p5, p7, p8, p9 { 
+    font-size: 28px;
+}
+
+
+p3, p6 {
+ font-size: 30px;
+ font-weight: bold;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+    text-decoration-color: hotpink;
+    
+}
+
