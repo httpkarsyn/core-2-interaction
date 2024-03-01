@@ -5,7 +5,7 @@ body {
 
 .post-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Change minmax(100px, 293px) to 1fr */
+    grid-template-columns: repeat(3, 1fr); 
     justify-content: center;
     grid-gap: 15px;
     margin-top: 15px;
@@ -16,14 +16,14 @@ body {
   
   .post-image {
     margin: 0;
-    padding-top: 100%; /* Maintain aspect ratio for the images */
+    padding-top: 100%; 
     position: relative;
   }
   
   .post-image img {
     width: 100%;
-    height: 100%; /* Fill the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    height: 100%; 
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
