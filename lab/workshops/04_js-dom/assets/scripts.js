@@ -48,6 +48,7 @@ var mainElement = document.querySelector('.Main');
 //  UPDATING AN HTML ELEMENT 
 //---------------------------------------------------------------
 
+
 // edit directly 
 // mainElement.style.background = 'green';
 //mainElement.innerHTML = 'hello world!';
@@ -81,6 +82,7 @@ function insertCostumeData(costume) {
 
 // FOR EACH LOOPS 
 //---------------------------------------------------------------
+
 
 costumes.forEach((costume) => {
     insertCostumeData(costume);
