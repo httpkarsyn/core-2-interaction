@@ -55,7 +55,9 @@ h6 {
     font-size: 0.85em; 
     font-weight: normal; 
     color: rgb(27, 27, 193);
+   
 }
+
 
 p { 
     margin: 0; 
@@ -87,7 +89,7 @@ header .container {
     font-size: 3rem; /* Example font size */ 
     font-family: 'Arial', sans-serif; /* Example font family */ 
     color: #fff; /* Example color */ 
-    text-transform: uppercase; /* Example text transformation */ 
+    text-transform: lowercase; /* Example text transformation */ 
     /* Add any other styling properties as needed */ 
 }
 
