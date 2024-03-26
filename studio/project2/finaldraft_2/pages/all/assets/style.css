@@ -271,3 +271,45 @@ h6 {
     float: left;
 }
 
+/* Amazon bottom panel or Footer */
+.to-top{
+    height:40px;
+    background-color:#354a63;
+    color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-bar{
+    background-color:#232f3e ;
+    color:white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot-bar a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+.foot-bar li{
+    list-style: none;
+}
+
+.foot-logo{
+    /* border-top: 0.2px solid white; */
+    background-color:#131a22;
+    color: #dddddd;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+hr{
+    border: 1px solid #dddddd21;
+}
