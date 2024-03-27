@@ -199,7 +199,7 @@ a:hover{
 
 .box a {
     text-decoration: none;
-    color: black;
+    color: rgb(48, 111, 131); 
 }
 
 .box a:hover{
@@ -215,66 +215,74 @@ a:hover{
 
 
 .box1-img{
-    background-image: url(../media/waterbottlestock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box2-img{
-    background-image: url(../media/thankyoustock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box3-img{
-    background-image: url(../media/togostock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box4-img{
-    background-image: url(../media/coffeecupstock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box5-img{
-    background-image: url(../media/foodstock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box6-img{
-    background-image: url(../media/foodwraperstock.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box7-img{
-    background-image: url(../media/aluminumstock.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:300px;
-    /* width:90% */
-}
-
-.box8-img{
     background-image: url(../media/allstock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box2-img{
+    background-image: url(../media/waterbottlestock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box3-img{
+    background-image: url(../media/thankyoustock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box4-img{
+    background-image: url(../media/togostock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box5-img{
+    background-image: url(../media/coffeecupstock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box6-img{
+    background-image: url(../media/foodstock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box7-img{
+    background-image: url(../media/foodwraperstock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
+    /* width:90% */
+}
+
+.box8-img{
+    background-image: url(../media/aluminumstock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-top: 5px;
     /* width:90% */
 }
 
