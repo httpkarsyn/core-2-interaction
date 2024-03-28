@@ -44,6 +44,10 @@
     border: 1.5px solid transparent;
 }
 
+.nav-address:hover {
+    border: none;
+}
+
 .add-icon{
     display: flex;
     align-items: center;
