@@ -14,6 +14,15 @@
     background-color: #0f1111;
     color: white;
 }
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .navbar{
+        height: 150px;
+        background-color: #8ddddc;
+        background-image: linear-gradient( to right, #8ddddc, #a4e6cf);
+}
+    }
+}
 
 /* Amazon logo */
 .nav-logo{
@@ -22,6 +31,7 @@
     border: 1.5px solid transparent;
   padding-top:12px;
 }
+
 
 .hover:hover{
     border: 1.5px solid white;
@@ -37,6 +47,13 @@
     background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .logo {
+        background-image: none;
+    }
+}
+
 
 
 /* Amazon delivery location */
@@ -44,6 +61,13 @@
     border: 1.5px solid transparent;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .nav-address{ 
+        display: none;
+       
+    }
+}
 .nav-address:hover {
     border: none;
 }
@@ -62,12 +86,29 @@
     margin-left: 3px;
 }
 
+
+
+
+
 /* Amzon searchbar */
 .nav-search{
     display: flex;
     height: 50px;
     width: 50vw;
     border: 2px solid transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .nav-search { 
+        width: 98%; 
+        max-width: none; 
+        margin-right: 3px;
+        margin-top: -20px;
+        border: 1px solid grey;
+        box-shadow: 2px 2px 5px grey;
+
+    }
 }
 
 .nav-search:hover{
@@ -83,6 +124,13 @@
     border-radius: 4px;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    #search-dropdown { 
+        display: none;
+    }
 }
 
 .search-input{
@@ -103,6 +151,13 @@
     border-bottom-left-radius: 0%;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .search-submit{ 
+        background-color: #f3f3f3;
+    }
+}
+
 .search-submit:hover{
     background-color: #ed9c0f;
     cursor: pointer;
@@ -113,8 +168,22 @@
     border: 1.5px solid transparent;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .nav-login{ 
+        display: none;   
+    }
+}
+
 .nav-order{
     border: 1.5px solid transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .nav-order{ 
+        display: none;   
+    }
 }
 
 span{
@@ -135,6 +204,13 @@ span{
     font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .nav-cart{ 
+        display: none;   
+    }
+}
+
 /* Panel styling */
 .panel{
     display: flex;
@@ -144,15 +220,39 @@ span{
     color:white;
     height: 50px;
 }
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .panel{ 
+        background-color: #c3eee6;
+    }
+}
 
 .panel-all{
     width: 5%;
     font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .panel-all{ 
+        display: none;   
+    }
+}
+
+
 .panel-anchor{
     width: 75%;
     font-size: 0.8rem;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .panel-anchor{ 
+        margin-top: -110px; 
+
+    }
 }
 
 .panel a{
@@ -160,6 +260,18 @@ span{
     text-decoration: none;
     padding-left: 8px ;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .panel a{ 
+        
+        color: black;
+        text-align: left;
+        
+
+    }
+}
+
 
 a:hover{
     color: #fcb02c;
@@ -169,11 +281,17 @@ a:hover{
     font-size:0.85rem;
     font-weight: 650;
 }
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .panel-shop{ 
+        display: none;
+    }
+}
 
 /* Here comes the hero section */
 .hero-section {
     background-image: url('../media/trashifyheader.png');
-    background-size: 100%; 
+    background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
     height: 300px;
@@ -181,27 +299,53 @@ a:hover{
     justify-content: center;
     align-items: flex-end;
 }
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .hero-section{
+        grid-template-columns: 1fr 1fr; /* Two columns for mobile view */
+    }
+}
 
 
 
 /* Main content */
-.content{
+.content {
     padding: 15px;
-    background-color:#e2e7e6;
+    background-color: #e2e7e6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
+
 }
-.box{
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .content {
+        grid-template-columns: 1fr 1fr; /* Two columns for mobile view */
+    }
+}
+
+.box {
     /* box-shadow: 1px 1px 5px black; */
     background-color: white;
     color: black;
     height: 400px;
-    padding:15px;
+    padding: 15px;
+    max-width: 400px;
 }
 
-.box a {
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .box {
+        grid-template-columns: 1fr 1fr; /* Two columns for mobile view */
+        background-color: white;
+        color: black;
+        height: 300px;
+        padding: 15px;
+    }
+
+ .box a {
     text-decoration: none;
     color: rgb(48, 111, 131); 
 }
@@ -210,13 +354,25 @@ a:hover{
     color:#ed9c0f;
 }
 
-.box-img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 100%; /* Ensure images maintain the same width */
+    .box-img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%; /* Ensure images maintain the same width */
+    }
 }
 
+/* Define styles for other .box-* classes here if needed */
+
+
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    .box-img {
+        grid-template-columns: 1fr 1fr; /* Two columns for mobile view */
+        
+       
+    }
+}
 
 .box1-img{
     background-image: url(../media/allstock.jpg);
