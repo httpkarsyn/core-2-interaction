@@ -362,7 +362,7 @@ a:hover {
     /* Styles for mobile devices */
     .hero-text {
         position: absolute;
-        top: 35%;
+        top: 32%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white; 
@@ -393,7 +393,7 @@ a:hover {
     /* Styles for mobile devices */
     .hero-subtext {
     position: absolute;
-    top: 40%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
@@ -642,6 +642,8 @@ hr {
     .foot-logo{
         background-color: #c3eee6;
         color: black;
+       
+       
     }
 }
 @media only screen and (max-width: 768px) {
