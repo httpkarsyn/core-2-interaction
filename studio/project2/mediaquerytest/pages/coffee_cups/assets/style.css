@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 /* Navition bar styling */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,64 +15,138 @@
     color: white;
 }
 
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .navbar {
+        height: 110px;
+        background-color: #8ddddc;
+        background-image: linear-gradient(to right, #8ddddc, #a4e6cf);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Styles for tablet devices */
+    .navbar {
+        height: 110px;
+        background-color: #0f1111;;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+   
+}
+}
+
+
 /* Amazon logo */
-.nav-logo{
+.nav-logo {
     height: 50px;
     width: 100px;
     border: 1.5px solid transparent;
-  padding-top:12px;
+    padding-top: 12px;
 }
 
-.hover:hover{
+
+.hover:hover {
     border: 1.5px solid white;
     border-radius: 5px;
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .hover:hover {
+        border: none;
+    }
+}
+
 .logo {
     background-image: url(../media/trashifylogo.png);
     mix-blend-mode: lighten;
-    height: 200px; 
-    width: auto; 
+    height: 200px;
+    width: auto;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .logo {
+        background-image: none;
+    }
 }
 
 
 
 /* Amazon delivery location */
-.nav-address{
+.nav-address {
     border: 1.5px solid transparent;
 }
 
-.add-icon{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .nav-address {
+        display: none;
+    }
+}
+
+.nav-address:hover {
+    border: none;
+}
+
+.add-icon {
     display: flex;
     align-items: center;
 }
-.add-text{
-    margin-left:15px;
+
+.add-text {
+    margin-left: 15px;
     font-size: 0.85rem;
 }
 
-.add-location{
+
+.add-location {
     font-size: 1rem;
     margin-left: 3px;
 }
 
 /* Amzon searchbar */
-.nav-search{
+.nav-search {
     display: flex;
     height: 50px;
     width: 50vw;
     border: 2px solid transparent;
 }
 
-.nav-search:hover{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .nav-search {
+        width: 695%;
+        max-width: none;
+        margin-right: 15px;
+        margin-top: 0px;
+        border: 1px solid grey;
+        box-shadow: 2px 2px 5px grey;
+        display: flex;
+        position: sticky;
+
+    }
+
+}
+
+.nav-search:hover {
     border: 2px solid orange;
     border-radius: 6px;
 }
 
-#search-dropdown{
+#search-dropdown {
     text-align: center;
     background-color: #f3f3f3;
     width: 8%;
@@ -82,7 +156,15 @@
     border-bottom-right-radius: 0%;
 }
 
-.search-input{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    #search-dropdown {
+        display: none;
+    }
+}
+
+.search-input {
     font-size: 1.1rem;
     padding-left: 6px;
     border: none;
@@ -90,7 +172,7 @@
 }
 
 
-.search-submit{
+.search-submit {
     font-size: 16px;
     background-color: #fcb02c;
     width: 7%;
@@ -100,83 +182,154 @@
     border-bottom-left-radius: 0%;
 }
 
-.search-submit:hover{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .search-submit {
+        background-color: #f3f3f3;
+    }
+}
+
+.search-submit:hover {
     background-color: #ed9c0f;
     cursor: pointer;
 }
 
 /* Amazon signin and returns & orders option */
-.nav-login{
+.nav-login {
     border: 1.5px solid transparent;
 }
 
-.nav-order{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .nav-login {
+        display: none;
+    }
+}
+
+.nav-order {
     border: 1.5px solid transparent;
 }
 
-span{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .nav-order {
+        display: none;
+    }
+}
+
+span {
     font-size: 0.8rem;
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
 
 /* Amazon cart option */
-.nav-cart{
+.nav-cart {
     display: flex;
     border: 1.5px solid transparent;
 }
 
-.nav-cart i{
+.nav-cart i {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .nav-cart {
+        display: none;
+    }
+}
+
 /* Panel styling */
-.panel{
+.panel {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #222f3d;
-    color:white;
+    color: white;
     height: 50px;
 }
 
-.panel-all{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel {
+        background-color: #c3eee6;
+    }
+}
+
+.panel-all {
     width: 5%;
     font-size: 0.8rem;
 }
 
-.panel-anchor{
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel-all {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel-all i {
+        display: none;
+    }
+}
+
+
+.panel-anchor {
     width: 75%;
     font-size: 0.8rem;
 }
 
-.panel a{
-    color: white;
-    text-decoration: none;
-    padding-left: 8px ;
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel-anchor {
+
+        margin-left: -55px;
+    }
 }
 
-a:hover{
+.panel a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel a {
+        color: black;
+
+    }
+}
+
+a:hover {
     color: #fcb02c;
 }
 
-.panel-shop{
-    font-size:0.85rem;
+.panel-shop {
+    font-size: 0.85rem;
     font-weight: 650;
 }
 
-/* Here comes the hero section */
-.hero-section {
-    background-image: url('../media/trashifyheader.png');
-    background-size: 100%; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .panel-shop {
+        display: none;
+    }
 }
 body {
     font-family: 'Open Sans', Arial, sans-serif; 
@@ -200,6 +353,15 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 10px; 
 }
+@media only screen and (max-width: 768px){
+    .grid { 
+        width: 80%; 
+        margin: 0 auto; 
+        display: grid; 
+        grid-template-columns: 1fr; /* Set grid to one column for mobile view */
+        gap: 10px; 
+    }
+    }
 
 .product { 
     padding: 1em; 
@@ -217,6 +379,15 @@ body {
     height: 200px; 
     object-fit: cover; 
     margin-bottom: 10px; 
+}
+@media only screen and (max-width: 768px){
+    .product img { 
+        width: 100%; 
+        height: 400px; 
+        object-fit: cover; 
+        margin-bottom: 10px;
+        margin: 0%; 
+    }
 }
 
 h6 { 
@@ -273,6 +444,13 @@ h6 {
     -webkit-text-fill-color: transparent;
     letter-spacing: 3px;
 }
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .Stars::before {
+        left: -210px;
+    }
+}
 
 /* Amazon bottom panel or Footer */
 .to-top{
@@ -315,4 +493,27 @@ h6 {
 
 hr{
     border: 1px solid #dddddd21;
+}
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .foot-bar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .foot-logo{
+        background-color: #c3eee6;
+        color: black;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    /* Styles for mobile devices */
+    .to-top{
+        color: black;
+        background-image: linear-gradient(to right, #8ddddc, #a4e6cf);
+    }
 }

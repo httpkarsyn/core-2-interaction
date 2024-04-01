@@ -1,93 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
- }
- 
- 
- /* Navition bar styling */
- .navbar{
+}
+
+
+/* Navition bar styling */
+.navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 60px;
     background-color: #0f1111;
     color: white;
- }
- 
- 
- /* Amazon logo */
- .nav-logo{
+}
+
+
+/* Amazon logo */
+.nav-logo {
     height: 50px;
     width: 100px;
     border: 1.5px solid transparent;
-  padding-top:12px;
- }
- 
- 
- .hover:hover{
+    padding-top: 12px;
+}
+
+
+.hover:hover {
     border: 1.5px solid white;
     border-radius: 5px;
     cursor: pointer;
- }
- .logo {
+}
+
+.logo {
     background-image: url(../media/trashifylogo.png);
     mix-blend-mode: lighten;
     height: 200px;
     width: auto;
     background-size: contain;
     background-repeat: no-repeat;
- }
- 
- 
- 
- 
- 
- 
- /* Amazon delivery location */
- .nav-address{
+}
+
+
+
+
+
+
+/* Amazon delivery location */
+.nav-address {
     border: 1.5px solid transparent;
- }
- 
- 
- .nav-address:hover {
+}
+
+
+.nav-address:hover {
     border: none;
- }
- 
- 
- .add-icon{
+}
+
+
+.add-icon {
     display: flex;
     align-items: center;
- }
- .add-text{
-    margin-left:15px;
+}
+
+.add-text {
+    margin-left: 15px;
     font-size: 0.85rem;
- }
- 
- 
- .add-location{
+}
+
+
+.add-location {
     font-size: 1rem;
     margin-left: 3px;
- }
- 
- 
- /* Amzon searchbar */
- .nav-search{
+}
+
+
+/* Amzon searchbar */
+.nav-search {
     display: flex;
     height: 50px;
     width: 50vw;
     border: 2px solid transparent;
- }
- 
- 
- .nav-search:hover{
+}
+
+
+.nav-search:hover {
     border: 2px solid orange;
     border-radius: 6px;
- }
- 
- 
- #search-dropdown{
+}
+
+
+#search-dropdown {
     text-align: center;
     background-color: #f3f3f3;
     width: 8%;
@@ -95,20 +97,20 @@
     border-radius: 4px;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
- }
- 
- 
- .search-input{
+}
+
+
+.search-input {
     font-size: 1.1rem;
     padding-left: 6px;
     border: none;
     width: 100%;
- }
- 
- 
- 
- 
- .search-submit{
+}
+
+
+
+
+.search-submit {
     font-size: 16px;
     background-color: #fcb02c;
     width: 7%;
@@ -116,91 +118,91 @@
     border-radius: 4px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
- }
- 
- 
- .search-submit:hover{
+}
+
+
+.search-submit:hover {
     background-color: #ed9c0f;
     cursor: pointer;
- }
- 
- 
- /* Amazon signin and returns & orders option */
- .nav-login{
+}
+
+
+/* Amazon signin and returns & orders option */
+.nav-login {
     border: 1.5px solid transparent;
- }
- 
- 
- .nav-order{
+}
+
+
+.nav-order {
     border: 1.5px solid transparent;
- }
- 
- 
- span{
+}
+
+
+span {
     font-size: 0.8rem;
- }
- 
- 
- .bold{
+}
+
+
+.bold {
     font-weight: 700;
- }
- 
- 
- /* Amazon cart option */
- .nav-cart{
+}
+
+
+/* Amazon cart option */
+.nav-cart {
     display: flex;
     border: 1.5px solid transparent;
- }
- 
- 
- .nav-cart i{
+}
+
+
+.nav-cart i {
     font-size: 20px;
- }
- 
- 
- /* Panel styling */
- .panel{
+}
+
+
+/* Panel styling */
+.panel {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #222f3d;
-    color:white;
+    color: white;
     height: 50px;
- }
- 
- 
- .panel-all{
+}
+
+
+.panel-all {
     width: 5%;
     font-size: 0.8rem;
- }
- 
- 
- .panel-anchor{
+}
+
+
+.panel-anchor {
     width: 75%;
     font-size: 0.8rem;
- }
- 
- 
- .panel a{
+}
+
+
+.panel a {
     color: white;
     text-decoration: none;
-    padding-left: 8px ;
- }
- 
- 
- a:hover{
+    padding-left: 8px;
+}
+
+
+a:hover {
     color: #fcb02c;
- }
- 
- 
- .panel-shop{
-    font-size:0.85rem;
+}
+
+
+.panel-shop {
+    font-size: 0.85rem;
     font-weight: 650;
- }
- 
- 
- /* Here comes the hero section */
- .hero-section {
+}
+
+
+/* Here comes the hero section */
+.hero-section {
     background-image: url('../media/trashifyheader.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -209,175 +211,176 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
- }
- 
- 
- 
- 
- 
- 
- /* Main content */
- .content{
+}
+
+
+
+
+
+
+/* Main content */
+.content {
     padding: 15px;
-    background-color:#e2e7e6;
+    background-color: #e2e7e6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
- }
- .box{
+}
+
+.box {
     /* box-shadow: 1px 1px 5px black; */
     background-color: white;
     color: black;
     height: 400px;
-    padding:15px;
- }
- 
- 
- .box a {
+    padding: 15px;
+}
+
+
+.box a {
     text-decoration: none;
     color: rgb(48, 111, 131);
- }
- 
- 
- .box a:hover{
-    color:#ed9c0f;
- }
- 
- 
- .box-img {
+}
+
+
+.box a:hover {
+    color: #ed9c0f;
+}
+
+
+.box-img {
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
-    width: 100%; /* Ensure images maintain the same width */
- }
- 
- 
- 
- 
- .box1-img{
+    width: 100%;
+    /* Ensure images maintain the same width */
+}
+
+
+
+
+.box1-img {
     background-image: url(../media/allstock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box2-img{
+}
+
+
+.box2-img {
     background-image: url(../media/waterbottlestock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box3-img{
+}
+
+
+.box3-img {
     background-image: url(../media/thankyoustock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box4-img{
+}
+
+
+.box4-img {
     background-image: url(../media/togostock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box5-img{
+}
+
+
+.box5-img {
     background-image: url(../media/coffeecupstock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box6-img{
+}
+
+
+.box6-img {
     background-image: url(../media/foodstock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box7-img{
+}
+
+
+.box7-img {
     background-image: url(../media/foodwraperstock.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- .box8-img{
+}
+
+
+.box8-img {
     background-image: url(../media/aluminumstock.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height:300px;
+    height: 300px;
     margin-top: 5px;
     /* width:90% */
- }
- 
- 
- /* Amazon bottom panel or Footer */
- .to-top{
-    height:40px;
-    background-color:#354a63;
+}
+
+
+/* Amazon bottom panel or Footer */
+.to-top {
+    height: 40px;
+    background-color: #354a63;
     color: #dddddd;
     display: flex;
     justify-content: center;
     align-items: center;
- }
- 
- 
- .foot-bar{
-    background-color:#232f3e ;
-    color:white;
+}
+
+
+.foot-bar {
+    background-color: #232f3e;
+    color: white;
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
- }
- 
- 
- .foot-bar a {
+}
+
+
+.foot-bar a {
     color: #dddddd;
     text-decoration: none;
     font-size: 12px;
- }
- 
- 
- .foot-bar li{
+}
+
+
+.foot-bar li {
     list-style: none;
- }
- 
- 
- .foot-logo{
+}
+
+
+.foot-logo {
     /* border-top: 0.2px solid white; */
-    background-color:#131a22;
+    background-color: #131a22;
     color: #dddddd;
     height: 50px;
     padding-top: 10px;
     text-align: center;
- }
- 
- 
- hr{
+}
+
+
+hr {
     border: 1px solid #dddddd21;
- }
- 
+}
