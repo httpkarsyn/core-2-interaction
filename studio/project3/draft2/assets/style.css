@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.section {
+  position: relative;
+  height: 100vh; 
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+}
+
+.text-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.text {
+  font-size: 24px;
+  color: rgb(255, 242, 126);
+  text-align: left; 
+  margin-left: 20px;
+  filter: blur(.5px);
+}
+
+
+.upper-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1;
+}
+
+.upper-overlay .text {
+  color: rgb(255, 242, 126);
+  text-align: left;
+  font-size: 100px;
+}
+
+.lower-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1;
+}
+
+.lower-overlay .text {
+  color: rgb(255, 242, 126);
+  text-align: left;
+  font-size: 30px;
+
+}
+
+
+.countdown-text {
+  font-family: monospace;
+  text-align: center;
+  color: rgb(255, 242, 126);
+}
+
+.countdown-text ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.countdown-text ul li {
+  margin-right: 35%;
+}
+
+.countdown-text ul li span {
+  display: block;
+  font-size: 100px;
+  font-weight: bold;
+}
