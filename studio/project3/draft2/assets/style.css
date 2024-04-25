@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  color: white;
+
 }
 
 .section {
@@ -41,65 +40,100 @@ body {
   background-color: black;
 }
 
-.text {
-  font-size: 24px;
-  color: rgb(255, 242, 126);
+.large-text { 
+  font-size: 130px;
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color:  rgb(255, 242, 126);
   text-align: left; 
   margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
   filter: blur(.5px);
 }
 
+.body-text {
+  font-size: 40px;
+  color: rgb(241, 241, 239);
+  text-align: left; 
+  margin-left: 20px;
+  margin-right: 120px;
+  filter: blur(.5px);
+  font-family: "richmond-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
 
-.upper-overlay {
+
+
+.text-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
-  z-index: 1;
+  padding: 20px; 
+  z-index: 1; 
 }
 
-.upper-overlay .text {
-  color: rgb(255, 242, 126);
+.text-overlay .text {
+  
+  color:  rgb(255, 242, 126);
   text-align: left;
-  font-size: 100px;
 }
 
-.lower-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  z-index: 1;
+.upper-text {
+  top: 0;
+  font-size: 130px;
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.lower-overlay .text {
-  color: rgb(255, 242, 126);
-  text-align: left;
-  font-size: 30px;
-
+.lower-text {
+  top: 50px; 
+  font-size: 40px;
+  font-family: "richmond-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 
-.countdown-text {
-  font-family: monospace;
-  text-align: center;
-  color: rgb(255, 242, 126);
+.clock-text {
+ 
+  text-align: center; 
+  filter: blur(.5px);
+
 }
 
-.countdown-text ul {
+.clock-text ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  color: rgb(255, 242, 126);
+
 }
 
-.countdown-text ul li {
-  margin-right: 35%;
+.clock-text ul li {
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
-.countdown-text ul li span {
+.clock-text ul li span {
   display: block;
-  font-size: 100px;
-  font-weight: bold;
+}
+
+.clock-text ul li span.number {
+  font-size: 150px;
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.clock-text ul li span.word {
+  font-size: 50px; 
+  font-family: "richmond-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
