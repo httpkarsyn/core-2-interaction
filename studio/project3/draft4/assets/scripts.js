@@ -52,14 +52,18 @@ fetch(URL_6)
 
 function renderDust(data) {
     console.log(data);
+    var dateObject = new Date();
+    var hour = dateObject.getHours();
     var dustElement = document.querySelector('.api-overlay[data-property="dust"]');
-    dustElement.innerHTML = data.hourly.dust[hour];
+    dustElement.innerHTML = data.hourly.dust[hour] + "&nbsp; MG/M3";
 }
 
 function renderWindSpeed(data) {
     console.log(data);
+    var dateObject = new Date();
+    var hour = dateObject.getHours();
     var windSpeedElement = document.querySelector('.api-overlay[data-property="wind-speed"]');
-    windSpeedElement.innerHTML = data.hourly.windSpeed_10m[hour] + "&nbsp;MPH";
+    windSpeedElement.innerHTML = data.hourly.wind_speed_10m[hour] + "&nbsp;MPH";
 }
 
 function renderTemperature(data) {
@@ -68,17 +72,7 @@ function renderTemperature(data) {
     var hour = dateObject.getHours();
     var temperatureElement = document.querySelector('.api-overlay[data-property="temperature"]');
     temperatureElement.innerHTML = data.hourly.temperature_2m[hour] + "&nbsp;F";
-    var temperatureElement = document.querySelector('.api-overlay[data-property="temperature"]');
-    temperatureElement.innerHTML = temperature + "&nbsp;F";
-    
-//     bar
-
-    var maxTemperature = 122; 
-    var barWidth = (temperature / maxTemperature) * 100; 
-    var barElement = document.querySelector('.bar');
-    barElement.style.width = barWidth + "%";
 }
-
 
 function renderSnowfall(data) {
     console.log(data);
@@ -95,3 +89,11 @@ function renderRain(data) {
       var rainElement = document.querySelector('.api-overlay[data-property="rain"]');
       rainElement.innerHTML = data.hourly.rain [hour] + "&nbsp;IN";
   }
+
+  //     bar
+
+  var maxTemperature = 122; 
+  var temperature = data.hourly.temperature_2m
+  var barWidth = (temperature / maxTemperature) * 100; 
+  var barElement = document.querySelector('.bar');
+  barElement.style.width = barWidth + "%";
