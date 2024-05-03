@@ -20,8 +20,7 @@
 })();
 
 // Fetching and rendering data from APIs
-var lat = 40.73;
-var lng = -74.00;
+
 
 var URL_1 = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=35.3733&longitude=-119.0187&hourly=dust&forecast_days=1`;
 var URL_2 = `https://api.open-meteo.com/v1/forecast?latitude=-41.2866&longitude=174.7756&hourly=wind_speed_10m&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=1`;
@@ -50,13 +49,19 @@ fetch(URL_6)
     .then((data) => renderRain(data));
 
 
-function renderDust(data) {
-    console.log(data);
-    var dateObject = new Date();
-    var hour = dateObject.getHours();
-    var dustElement = document.querySelector('.api-overlay[data-property="dust"]');
-    dustElement.innerHTML = data.hourly.dust[hour] + "&nbsp; MG/M3";
-}
+
+    function renderDust(data) {
+        console.log(data);
+        var dateObject = new Date();
+        var hour = dateObject.getHours();
+        var dustElement = document.querySelector('.api-overlay[data-property="dust"]');
+        var dustValue = data.hourly.dust[hour];
+        dustElement.innerHTML = dustValue + "&nbsp; MG/M3";
+        let adjustedValue = (dustValue - 37) * 0.568;
+        let finalResult = 100 - adjustedValue;
+        let finalResultPercentage = finalResult + "%";
+    }
+    
 
 function renderWindSpeed(data) {
     console.log(data);
@@ -90,10 +95,4 @@ function renderRain(data) {
       rainElement.innerHTML = data.hourly.rain [hour] + "&nbsp;IN";
   }
 
-  //     bar
 
-  var maxTemperature = 122; 
-  var temperature = data.hourly.temperature_2m
-  var barWidth = (temperature / maxTemperature) * 100; 
-  var barElement = document.querySelector('.bar');
-  barElement.style.width = barWidth + "%";
