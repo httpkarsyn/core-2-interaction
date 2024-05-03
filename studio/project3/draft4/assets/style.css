@@ -90,6 +90,7 @@ body {
   font-family: "richmond-display", sans-serif;
   font-weight: 200;
   font-style: normal;
+  letter-spacing: .4vw;
 }
 
 .clock-text {
@@ -134,6 +135,7 @@ body {
   font-family: "richmond-display", sans-serif;
   font-weight: 200;
   font-style: normal;
+  letter-spacing: .2vw;
 }
 .api-text {
   top: 2vw; 
@@ -141,6 +143,7 @@ body {
   font-family: "interstate-compressed", sans-serif;
   font-weight: 800;
   font-style: normal;
+ 
 }
 .api-overlay {
   position: absolute;
@@ -160,10 +163,59 @@ body {
   font-weight: 800;
   font-style: normal;
 }
-.api-overlay[data-property="elevation"] {
+.api-overlay[data-property="temperature"] {
   font-size: 12vw;
   color: rgb(255, 242, 126);
   font-family: "interstate-compressed", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+
+.api-overlay[data-property="snowfall"] {
+  font-size: 12vw;
+  color: rgb(255, 242, 126);
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.api-overlay[data-property="rain"] {
+  font-size: 12vw;
+  color: rgb(255, 242, 126);
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.api-overlay[data-property="dust"] {
+  font-size: 12vw;
+  color: rgb(255, 242, 126);
+  font-family: "interstate-compressed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.time {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 70vw;
+  height: 16px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 242, 126);
+  margin-bottom: 5vw;
+}
+
+
+.bar {
+  width: 40%;
+  height: 12px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 6px;
+  background-color: rgb(255, 242, 126);
+  
 }
