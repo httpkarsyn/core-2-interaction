@@ -39,11 +39,11 @@ body {
 }
 
 .large-text { 
-  font-size: 8vw; 
+  font-size: 7vw; 
   font-family: "interstate-compressed", sans-serif;
   font-weight: 800;
   font-style: normal;
-  color:  rgb(255, 242, 126);
+  color: rgb(255, 242, 126);
   text-align: left; 
   margin-left: 4vw; 
   margin-right: 4vw;
@@ -56,13 +56,14 @@ body {
   color: rgb(241, 241, 239);
   text-align: left; 
   margin-left: 4vw; 
-  margin-right: 12vw;
+  margin-right: 8vw; 
   filter: blur(0.5px);
   font-family: "richmond-display", sans-serif;
   font-weight: 200;
   font-style: normal;
   margin-bottom: 4vw;
 }
+
 
 .text-overlay {
   position: absolute;
@@ -210,7 +211,11 @@ body {
 }
 
 
-.bar {
+.bar-temp, 
+.bar-dust, 
+.bar-snow,
+.bar-rain,
+.bar-wind{
   width: 0%;
   height: 12px;
   position: absolute;
@@ -219,4 +224,16 @@ body {
   border-radius: 6px;
   background-color: rgb(255, 242, 126);
   
+}
+.max-temperature {
+  position: absolute;
+  top: 50%;
+  right: -5.5vw;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color:  rgb(255, 242, 126);
+  font-size: 2vw; 
+  font-family: "richmond-display", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
