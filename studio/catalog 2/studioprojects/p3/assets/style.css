@@ -13,6 +13,29 @@ body {
  
 }
 
+video {
+    width: 100%;
+    height: 100%; 
+}
+
+
+.custom-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.custom-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.custom-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.custom-video {
+    width: 100%; 
+}
+
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -26,8 +49,8 @@ body {
     width: 100vw;
     font-size: 6vw;
     height: 100vh;
+    background-color:#fd0019;
     color: #efefec;
-    background-color: #fd0019;
     font-family: "forma-djr-display", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -99,9 +122,28 @@ body {
 
 .horizontal-section__item > span {
     font-size: 4vw;
-    writing-mode: vertical-lr;
     padding: 1vw;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
 }
+
+.horizontal-section__item > second-span {
+    font-size: 2.5vw;
+    padding: 1vw;
+    width: 60%; 
+    margin: 0 auto; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+}
+
+
 .horizontal-section__item:nth-child(1) {
     left: 0vw;
     background-color:  #efefec;
@@ -110,38 +152,13 @@ body {
 }
 
 .horizontal-section__item:nth-child(2) {
-    left: 10vw;
+    left: 0vw;
     background-color:  #efefec;
     border: solid 3px;
     border-color: #fd0019;
 }
 
 .horizontal-section__item:nth-child(3) {
-    left: 20vw;
-    background-color:  #efefec;
-    border: solid 3px;
-    border-color: #fd0019;
-}
-
-.horizontal-section__item:nth-child(4) {
-    left: 30vw;
-    background-color:  #efefec;
-    border: solid 3px;
-    border-color: #fd0019;
-}
-
-.horizontal-section__item:nth-child(5) {
-    left: 40vw;
-    background-color:  #efefec;
-    border: solid 3px;
-    border-color: #fd0019;
-}
-
-
-
-
-
-/* for final .horizontal-section__item:nth-child(5) {
     background-color:  #fd0019;
     border: solid 3px;
     color: #efefec;
@@ -151,8 +168,8 @@ body {
     font-style: normal;
     text-decoration: none ;
     font-size: 6vw;
-} */
 
+}
 .credits-section {
     font-size: 2vw;
     font-weight: 100;

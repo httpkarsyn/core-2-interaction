@@ -12,6 +12,7 @@ function getProgress(element) {
 
 document.querySelectorAll('.horizontal-section').forEach((section) => {
     window.addEventListener('scroll', () => {
-        section.children[0].scrollLeft = getProgress(section) * window.innerWidth * 5;
+        section.children[0].scrollLeft = getProgress(section) * window.innerWidth * 3;
     });
 });
+
