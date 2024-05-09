@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", startAutoScrolling);
 
 function startAutoScrolling() {
     auto_scroll_started = true;
-    scroll_counter += 1.0; 
+    scroll_counter += 1.2; 
     window.scrollTo(0, scroll_counter);
 
     scroller = window.requestAnimationFrame(startAutoScrolling);
